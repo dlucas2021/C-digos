@@ -1,0 +1,6 @@
+ p = q and ( not r or not s)
+ 
+ not p = not ( q and ( not r or not s)
+ 
+ not p = not q or ( r or s)
+ 
