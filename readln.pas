@@ -1,16 +1,27 @@
 {$mode objfpc}{$H-}{$R+}{$T+}{$Q+}{$V+}{$D+}{$X-}{$warnings on}
 program ejemplo_readln_03;
 
+
+procedure  suma (x: integer) ;
+
 var
 
     i: integer;
-
+    
 begin
 
-    writeln(' Escribe un numero entero: ');
-    readln(i) ;
-    write('La raiz cuadrada de ',i,' es ');
-    writeln( sqrt(i):0:2 ); // Escribe la raiz cuadrada del numero
-// Da error de ejecucion si no es un entero
+    i := x + 4;
+    writeln('La suma de dos números reales es igual a ', i);
+    
+end;
 
+var
+
+    a: integer;
+    
+begin
+
+    readln(a);
+    suma(a);
+    
 end.
